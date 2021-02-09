@@ -11,7 +11,7 @@ h1{
     font-size: 40px;
 }
 .gallery{
-    margin: 10px 50px;
+    margin: 40px 35px;
 }
 .gallery img{
     height: 250px;
@@ -22,4 +22,11 @@ h1{
 .gallery img:hover{
     filter: grayscale(0);
     transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px){
+    .gallery img{
+        height: auto;
+        max-width: 390px;
+    }
 }
