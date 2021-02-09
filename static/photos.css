@@ -27,6 +27,9 @@ h1{
 @media screen and (max-width: 600px){
     .gallery img{
         height: auto;
-        max-width: 390px;
+        max-width: 280px;
+    }
+    .gallery{
+        margin: 40px 20px;
     }
 }
