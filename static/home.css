@@ -1,0 +1,117 @@
+body::before{
+    background: center/cover no-repeat url('./static/photo/home.jpg');
+    opacity: 0.8;
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: -1;
+    top: 0px;
+    position: absolute;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.animation{
+    font-size: 2.4rem;
+    margin-top: 30px;
+}
+.welcome{
+    color: rgb(21, 21, 255);
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    body::before{
+        background: center/cover no-repeat url('./static/photo/home2.jpg');
+    }
+    .welcome{
+        font-size: 1.9rem;
+    }
+
+    .animation{
+        margin-top: 30px;
+    }
+  }
+
+.container {
+      margin: 51.5px auto;
+  }
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin: 0 auto;
+    align-items: center;
+    width: 18rem;
+    background: center/cover no-repeat url('./static/photo/card.jpg');
+}
+
+.padded {
+    height: 220px;
+    width: 220px;
+}
+
+@media screen and (max-width: 600px){
+    .padded {
+        padding: 18px;
+        height: 190px;
+        width: 190px;
+    }
+    .card{
+        width: 15rem;
+    }
+    .container{
+        margin: 51.5px auto;
+    }
+}
+
+.card-body h2,h4{
+    text-align: center;
+}
+
+
+.card-title{
+    color: springgreen;
+    font-size: 2rem;
+}
+.card-text{
+    color: white;
+    font-size: 1.6rem;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.myBtn {
+    background-color: rgb(66, 66, 248);
+    color: white;
+    font-size: 1rem;
+    padding: 16px 30px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+
+  }
+  
+  .myBtn:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+      background-color: rgb(79, 79, 255);
+  }
+
+  .text-center{
+      margin: 6px;
+  }

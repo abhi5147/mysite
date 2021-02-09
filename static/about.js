@@ -1,0 +1,1 @@
+document.getElementById('a5').classList.add('active');

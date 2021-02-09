@@ -1,0 +1,26 @@
+extends base.pug 
+
+block title
+    title Home
+
+block scripts
+    script(src="/static/home.js" defer type = "module")
+
+block style
+    style
+        include ../static/home.css
+
+block content
+    div.animation 
+        div.welcome Welcome to My Website
+
+    <div class="container">
+        <div class="card">
+            <img src="/static/photo/game.png" class="padded card-img-top">
+            <div class="card-body">
+                <div class="card-title text-center">My Gaming Site</div>
+                <div class="card-text text-center">Visit to Play!</div>
+                <a href="https://mygame-abhi.herokuapp.com/" class="text-center myBtn">Click to Go</a>
+            </div>
+        </div>
+    </div>
