@@ -41,7 +41,7 @@ body {
   }
   
   @media screen and (max-width: 600px) {
-    .top a:not(:nth-child(1),:nth-child(2)) {display: none;}
+    .top a:not(:first-child) {display: none;}
     .top a.icon {
       float: right;
       display: block;
