@@ -132,8 +132,8 @@ section .container .contactinfo .sci li:hover a img{
     }
     section .container .contactinfo{
         position: absolute;
-        width: 70%;
-        height: calc(100% - 80px);
+        width: 90%;
+        height: calc(100% - 120px);
         background: #0f3959;
         z-index: 1;
         padding: 40px;
