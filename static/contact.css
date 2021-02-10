@@ -46,24 +46,6 @@ section .container .contactinfo{
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 600px){
-    section .container{
-        position: relative;
-        min-width: 72%;
-        min-height: 550px;
-        display: flex;
-        z-index: 1000;
-        align-items: center;
-        justify-content: center;
-        margin-left: 0;
-    }
-    .footerIcon{
-        display: none;
-    }
-}
-
-
-
 section .container .contactinfo h2{
     color: #fff;
     font-size: 24px;
@@ -125,4 +107,87 @@ section .container .contactinfo .sci li a img{
 }
 section .container .contactinfo .sci li:hover a img{
     opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+    section .container{
+        position: relative;
+        min-height: 590px;
+        display: flex;
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .footerIcon{
+        display: none;
+    }
+    section .container .contactinfo{
+        position: absolute;
+        width: 70%;
+        height: calc(100% - 80px);
+        background: #0f3959;
+        z-index: 1;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    section .container .contactinfo h2{
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    section .container .contactinfo .info{
+        position: relative;
+        margin: 20px 0;
+    }
+    
+    section .container .contactinfo .info li{
+        position: relative;
+        list-style: none;
+        display: flex;
+        margin: 20px 0;
+        cursor: pointer;
+        align-items: flex-start;
+    }
+    
+    section .container .contactinfo .info li span:nth-child(1){
+        width: 30px;
+        min-width: 30px;
+    }
+    section .container .contactinfo .info li span:nth-child(1) img{
+        max-width: 100%;
+        /* filter: invert(1); */
+        opacity: 0.5;
+    }
+    section .container .contactinfo .info li span:nth-child(2){
+        color: #fff;
+        margin-left: 10px;
+        font-weight: 300;
+        opacity: 0.5;
+    }
+    
+    
+    section .container .contactinfo .sci li{
+        list-style: none;
+        margin-right: 20px;
+    }
+    section .container .contactinfo .sci li a img{
+        /* filter: invert(1); */
+        opacity: 0.5;
+        height: 30px;
+        width: 30px;
+    }
 }
