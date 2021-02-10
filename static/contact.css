@@ -29,25 +29,8 @@ section .container{
     min-height: 590px;
     display: flex;
     z-index: 1000;
-    display: flex;
     align-items: center;
     margin-left: 380px;
-}
-@media screen and (max-width: 600px){
-    section .container{
-        position: relative;
-        min-width: 100%;
-        min-height: 590px;
-        display: flex;
-        z-index: 1000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 0;
-    }
-    .footerIcon{
-        display: none;
-    }
 }
 
 section .container .contactinfo{
@@ -62,6 +45,24 @@ section .container .contactinfo{
     justify-content: space-between;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
+
+@media screen and (max-width: 600px){
+    section .container{
+        position: relative;
+        min-width: 72%;
+        min-height: 550px;
+        display: flex;
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .footerIcon{
+        display: none;
+    }
+}
+
+
 
 section .container .contactinfo h2{
     color: #fff;
